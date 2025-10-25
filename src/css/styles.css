@@ -16,3 +16,104 @@
 @import url('./badges.css');
 @import url('./back-link.css');
 @import url('./footer.css');
+
+#datetime-picker {
+  font-size: 16px;
+  padding: 8px 12px;
+  width: 250px;
+  border: 1px solid #808080;
+  border-radius: 4px;
+  color: #2e2f42;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+#datetime-picker:hover {
+  border-color: #000;
+}
+
+#datetime-picker:focus {
+  border-color: #4e75ff;
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(78, 117, 255, 0.2);
+}
+
+#datetime-picker:disabled {
+  background-color: #fafafa;
+  color: #808080;
+  border-color: #e0e0e0;
+  cursor: not-allowed;
+}
+
+button[data-start] {
+  margin-left: 8px;
+  padding: 8px 24px;
+  font-size: 16px;
+  border: none;
+  border-radius: 4px;
+  background-color: #4e75ff;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+button[data-start]:hover:not(:disabled) {
+  background-color: #6c8cff;
+}
+
+button[data-start]:disabled {
+  background-color: #cfcfcf;
+  color: #989898;
+  cursor: not-allowed;
+}
+
+.timer {
+  display: flex;
+  gap: 24px;
+  margin-top: 24px;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.value {
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 1.2;
+  color: #2e2f42;
+}
+
+.label {
+  font-size: 14px;
+  color: #555;
+  text-transform: uppercase;
+}
+
+.flatpickr-calendar {
+  font-family: 'Montserrat', sans-serif;
+  border-radius: 8px;
+  box-shadow: 0 4px 16px rgba(46, 47, 66, 0.1);
+  border: 1px solid #e0e0e0;
+}
+
+.flatpickr-day:hover {
+  background-color: rgba(78, 117, 255, 0.1);
+  border-color: #4e75ff;
+}
+
+.flatpickr-day.selected {
+  background-color: #4e75ff !important;
+  color: #fff !important;
+  border-color: #4e75ff;
+}
+
+.flatpickr-time input:hover {
+  border-color: #000;
+}
+
+.flatpickr-time input:focus {
+  border-color: #4e75ff;
+  box-shadow: 0 0 0 2px rgba(78, 117, 255, 0.2);
+}
